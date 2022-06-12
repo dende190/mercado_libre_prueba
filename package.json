@@ -1,0 +1,27 @@
+{
+  "name": "mercado_libre_prueba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "is_mutant.js",
+  "scripts": {
+    "test": "mocha --reporter spec --timeout 15000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dende190/mercado_libre_prueba.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dende190/mercado_libre_prueba/issues"
+  },
+  "homepage": "https://github.com/dende190/mercado_libre_prueba#readme",
+  "dependencies": {
+    "@google-cloud/firestore": "^5.0.2",
+    "@google-cloud/functions-framework": "^3.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^10.0.0",
+    "sinon": "^14.0.0"
+  }
+}
