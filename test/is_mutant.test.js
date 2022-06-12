@@ -1,9 +1,6 @@
 const {getFunction} = require('@google-cloud/functions-framework/testing');
-const chai = require('chai');
-chai.use(chaiHttp);
 
 describe('functions_mutant_http', () => {
-  const sinon = require('sinon');
   const assert = require('assert');
   require('../is_mutant');
 

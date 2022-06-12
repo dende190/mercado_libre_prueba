@@ -4,9 +4,11 @@
 
 1. Debes tener un ADN que sea (NxN) y que solamente contenga (A,T,C,G)
 2. Debes enviar este ADN a: https://us-central1-mercadolibre-353100.cloudfunctions.net/mutant, debe ser por `POST` y debe tener la siguiente estructura:
+```JSON
   {
     "dna": ["ATGCGA","CAGTGC","TTATBT","AGAAGG","CCCCTA","TCACTG"]
   }
+```
 3. Si es un mutante tendras un codigo 200 y podras decirle a Magneto, si es un humano normal tendras un codigo 403 y sera mejor desecharlo !
 
 ## Pasos para obtener estadisticas de los mutantes encontrados:
