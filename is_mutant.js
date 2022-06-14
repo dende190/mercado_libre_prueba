@@ -85,7 +85,10 @@ function isMutant(dna) {
       matrixColumnIterator <= matrixLength;
       matrixColumnIterator++
     ) {
-      if (positionHorizontal <= matrixColumnIterator) {
+      if (
+        positionHorizontal === 0 ||
+        positionHorizontal < matrixColumnIterator
+      ) {
         let sequenceHorizontal = true;
         for (let steps = 1; steps <= 3; steps++) {
           positionHorizontal++
@@ -116,7 +119,10 @@ function isMutant(dna) {
         }
       }
 
-      if (positionVertical <= matrixColumnIterator) {
+      if (
+        positionVertical === 0 ||
+        positionVertical < matrixColumnIterator
+      ) {
         let sequenceVertical = true;
         for (let steps = 1; steps <= 3; steps++) {
           positionVertical++;
